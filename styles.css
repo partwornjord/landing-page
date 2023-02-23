@@ -47,9 +47,15 @@ h1 {
     color: #e5e7eb;
 }
 
+.section1 img {
+    max-width: 200px;
+    border-radius: 15px;
+    border: 5px solid #3882f6;
+}
+
 .section2 {
     color: #1f2937;
-    background-color: #f9fAF8;     
+    background-color: #f9fAF8;
 }
 
 h2 {
@@ -68,7 +74,8 @@ h2 {
 .info {
     text-align: center;
     max-width: 200px;
-    flex: auto;
+    flex-grow: 0;
+    flex-shrink: 1;
 }
 
 
@@ -92,6 +99,9 @@ h2 {
 
 figure {
     max-width: 60%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
 }
 
 figcaption {
@@ -105,7 +115,6 @@ figcaption {
     justify-content: center;
     align-items: center;
     padding: 50px;
-    flex: auto;
 }
 
 .content {
@@ -114,8 +123,8 @@ figcaption {
     padding: 15px;
     max-width: 75%;
     display: flex;
-    justify-content: space-between;
-    gap: 300px;
+    justify-content: center;
+    
 }
 
 button {
@@ -131,13 +140,13 @@ button {
 .content > .main {
     display: block;
     max-width: 400px;
+    flex-grow: 0;
+    flex-basis: auto;
+    flex-shrink: 0;
 }
 
 .content > .button {
-    justify-content: flex-end;
     align-items: center;
-    flex: none;
-    flex: auto;
 }
 
 .footer {
